@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+.box1 {
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid black;
+  margin: 0 auto 30px;
+}
+
+.box__item1 {
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+}
+
+.box2 {
+  max-width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 3px solid black;
+  margin: 0 auto 30px;
+}
+
+.box__item2 {
+  width: 100px;
+  /* width: 300px; */
+  height: 300px;
+  background-color: red;
+  border: 3px solid black;
+  flex: 0 0 300px;
+}
+
+/* .box__item2::nth-child(4) {
+  order: 1;
+} */
+
+
+
+/* レスポンシブ対応 */
+.res {
+  max-width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav__item {
+  border-left: 1px solid black;
+  padding: 0 15px;
+}
+
+.nav__item:first-child {
+  border-left: none;
+}
+
+@media screen and (max-width:767px) {
+  .res {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .nav__list {
+    flex-direction: column;
+  }
+
+  .nav__item {
+    border-left: none;
+    border-bottom: 1px solid black;
+    padding: 0;
+  }
+}
