@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSの勉強</title>
+</head>
+
+<body>
+  <script>
+    //varは使わない！再宣言はタブー！
+    var test = "これはJavaScriptです";
+    var test = "これはjsです";        //再宣言OK
+    test = "これはjs記述例です";       //再代入OK
+    console.log(test);
+
+    let test02 = "これはJavaScriptです";
+    // let test02 = "これはjsです";  //再宣言NG
+    test02 = "これはjs記述例です";    //再代入OK
+    console.log(test02);
+
+    const test03 = "これはJavaScriptです";
+    //再宣言・再代入NG
+    console.log(test03);
+
+    //文字列型
+    var num = "1 + 2";
+    console.log(num);
+
+    //数値型
+    var num01 = 1 + 2;
+    console.log(num01);
+
+    //真偽型
+    var test04 = true;  //はい
+    var test05 = false; //いいえ
+
+    //配列(ちょっと特殊)
+    var arry = ["リンゴ", "ミカン", "ブドウ"];
+    console.log(arry);
+    console.log(arry[0]);
+    console.log(arry[1]);
+    console.log(arry[2]);
+
+    console.log(arry.length)
+    arry.push("モモ");
+    console.log(arry);
+
+    arry.pop("モモ");
+    console.log(arry);
+
+
+    //条件分岐
+    // const num02 = 10;
+    // const num02 = 3;
+    const num02 = 1;
+
+    if (num02 > 5) {
+      console.log("これは5より大きいです");
+    } else if (num02 > 2) {
+      console.log("これは2より大きいです");
+    } else {
+      console.log("これは2以下です");
+    }
+
+    //数値が同じであれば判定OK
+    const number = 10;
+    if (number == "10") {
+      console.log("これは10です");
+    }
+
+    //数値と型が同じであれば判定OK
+    const number01 = 10;
+    if (number01 === "10") {
+      console.log("これは10です");
+    }
+
+    //逆接
+    const number02 = 10;
+    if (number02 != 9) {
+      console.log("これは10ではありません");
+    }
+
+    const number03 = 10;
+    if (number02 !== "10") {
+      console.log("これは文字列の10ではありません");
+    }
+
+    //繰り返し処理
+    //while文
+    var num03 = 2;
+    while (num03 < 100) {
+      num03 = num03 * 3;
+      console.log(num03);
+    }
+    console.log("合計" + num03);
+
+    //for文
+    let num04 = 0;
+    for (var i = 0; i < 5; i++) {
+      num04 = num04 + 1;
+      console.log(num04);
+    }
+    console.log(num04 + "回");
+
+  </script>
+  <!-- <script src="./script.js"></script> -->
+</body>
+
+</html>
