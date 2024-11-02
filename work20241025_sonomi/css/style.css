@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+body {
+  background-color: #eeeeee;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: cadetblue;
+  text-align: center;
+  margin: 30px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+li {
+  margin: 3%;
+}
+
+.explanation {
+  background-color: white;
+  padding: 10px;
+}
+
+.title {
+  color: cadetblue;
+  padding-left: 3px;
+  border-left: 10px solid cadetblue;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width:400px) {
+  .wrap {
+    flex-direction: column;
+    /* padding: 0 15px; */
+  }
+
+  ul {
+    flex-direction: column;
+  }
+}
