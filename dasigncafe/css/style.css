@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+body {
+  background-color: #e8d9bf;
+}
+
+.header__inner {
+  /* background-color: #9ba8d4; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2.76%;  /* 55/1990(アートボードのサイズ) 2.86*/
+  padding-right: 7.28%; /* 145/1990(アートボードのサイズ) 7.55*/
+  padding-top: 15px;
+  position: absolute;
+  width: 100%;
+}
+
+.header__nav ul {
+  display: flex;
+  gap: 70px;
+}
+
+.header__nav li {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium","Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  color: #ffffff;
+}
+
+.logo {
+  width: 227px;
+}
+
+
+/* main */
+/* main {
+  max-width: 1000px;
+} */
+
+/* intro */
+.intro {
+  margin-top: 104px;
+  margin-bottom: 100px;
+}
+
+.intro p, .intro h2{
+  text-align: center;
+}
+
+.intro__etrans {
+  font-size: 30px;
+  margin: 30px auto;
+  margin-bottom: 52px;
+
+}
+
+.intro__catch {
+  font-size: 82px;
+  line-height: 1.17;
+  /* margin: 57px auto 40px; */
+  margin-bottom: 40px;
+  letter-spacing: 0.1em;
+}
+
+.intro__exp {
+  font-size: 23px;
+  line-height: 1.65;
+  letter-spacing: 0.1em;
+}
+
+/* section */
+#about, #menu, #event {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sec__title {
+  height: 78px;
+}
+
+section h2 {
+  text-align: center;
+}
+
+/* ABOUT US */
+/* #sec__about__title {
+  margin-bottom: 56px;
+} */
+
+.about__items {
+  margin-left: 56px;
+}
+
+.about__catch {
+  font-size: 44px;
+  line-height: 1.38;
+  margin: 56px auto 38px;
+}
+
+.about__exp {
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+.about__inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.aboutimg {
+  border-radius: 0 0 82px 0;
+}
+
+/* MENU */
+#sec__menu__title {
+  margin-top: 108px;
+  margin-bottom: 48px;
+}
+
+.menu__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menu__items {
+  max-width: 30%;
+}
+
+.menu__items img {
+  border-radius: 0 42px 0 0;
+}
+
+.menu__items h3 {
+  color: #d30202;
+  font-size: 38px;
+  margin: -10px 0 14px 14px;
+}
+
+.menu__items p {
+  font-size: 17px;
+  line-height: 1.47;
+}
+
+/* GALLERY */
+#sec__gallery__title {
+  margin-top: 100px;
+  margin-bottom: 26px;
+}
+
+.gallary_inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallary_inner img {
+  max-width: 20%;
+}
+
+/* EVENT */
+#sec__event__title {
+  margin-top: 71px;
+  margin-bottom: 40px;
+}
+
+.event__container {
+  border: #4f260b solid 3px;
+  background-color: #ffffff;
+  font-size: 23px;
+  padding: 38px 158px 20px;
+}
+
+.event__items {
+  display: flex;
+  margin-bottom: 23px;
+}
+
+.event__items p {
+  text-decoration:underline;
+}
+
+.event__items time {
+  margin-right: 56px;
+}
+
+/* ACCESS */
+#sec__access__title {
+  margin-top: 83px;
+  margin-bottom: 46px;
+}
+.map {
+  width: 100vh;
+  width: 100%;
+  filter: grayscale(100%) invert(92%) contrast(83%);
+}
+
+/* footer */
+footer {
+  background-color: #ffffff;
+  padding: 80px 462px;
+}
+
+.address__container {
+  display: flex;
+}
+
+.address__container img {
+  height: 50px;
+  margin-right: 65px;
+}
+
+.address {
+  line-height: 1.95;
+  font-size: 20px;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 77px;
+  font-size: 16px;
+}
+
+.toTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 125px;
+}
