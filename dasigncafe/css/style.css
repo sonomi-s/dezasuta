@@ -237,3 +237,98 @@ footer {
   bottom: 20px;
   width: 125px;
 }
+
+.sp__nav, .hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+
+}
+
+@media screen and (max-width: 1000px) {
+  .header__nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    width: 33px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+
+  .hamburger span {
+    width: 33px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: 13px;
+    transition: .3s;
+  }
+
+  .hamburger span::before {
+    width: 33px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    content: "";
+    top: -13px;
+    transition: .3s;
+  }
+  
+  .hamburger span::after {
+    width: 33px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    content: "";
+    bottom: -13px;
+    transition: .3s;
+  }
+
+  .open span {
+    background-color: transparent;
+  }
+
+  .open span::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .open span::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+  }
+
+  .sp__nav {
+    background-color: #000000bd;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 9998;
+  }
+
+  .sp__nav ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .sp__nav ul li {
+    color: #fff;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium","Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+}

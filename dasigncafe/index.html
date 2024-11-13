@@ -7,6 +7,8 @@
   <title>デザインカフェ</title>
   <link rel="stylesheet" href="./CSS/reset.css">
   <link rel="stylesheet" href="./CSS/style.css">
+  <!-- jQuery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -37,9 +39,39 @@
         </ul>
       </nav>
     </div>
-    <div class="mainvisual">
-      <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子">
+
+    <div class="hamburger">
+      <span></span>
     </div>
+    <nav class="sp__nav">
+      <ul>
+        <li>
+          <a href="#about">ABOUT US</a>
+        </li>
+        <li>
+          <a href="#menu">MENU</a>
+        </li>
+        <li>
+          <a href="#gallery">GALLERY</a>
+        </li>
+        <li>
+          <a href="#event">EVENT</a>
+        </li>
+        <li>
+          <a href="#access">ACCESS</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="mainvisual">
+      <picture>
+        <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width: 767px)">
+        <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子">
+      </picture>
+    </div>
+    <!-- <div class="mainvisual">
+      <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子">
+    </div> -->
   </header>
 
   <main>
@@ -158,6 +190,15 @@
       </a>
     </p>
   </footer>
+
+  <script>
+    $(function () {
+      $('.hamburger').click(function () {
+        $('.sp__nav').fadeToggle();   //フェードイン・フェードアウト
+        $('.hamburger').toggleClass('open');  //class名追加
+      });
+    });
+  </script>
 </body>
 
 </html>
