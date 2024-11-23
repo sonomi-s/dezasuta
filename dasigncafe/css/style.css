@@ -49,7 +49,6 @@ body {
   font-size: 30px;
   margin: 30px auto;
   margin-bottom: 52px;
-
 }
 
 .intro__catch {
@@ -85,7 +84,7 @@ section h2 {
   margin-bottom: 56px;
 } */
 
-#about h2 {
+.pc__about {
   text-align: left;
 }
 
@@ -186,19 +185,21 @@ section h2 {
   margin: 0 auto 23px;
 }
 
+.event__items time {
+  margin-right: 56px;
+}
+
 .event__items p {
   text-decoration:underline;
 }
 
-.event__items time {
-  margin-right: 56px;
-}
 
 /* ACCESS */
 #sec__access__title {
   margin-top: 83px;
   margin-bottom: 46px;
 }
+
 .map {
   width: 100vh;
   width: 100%;
@@ -221,8 +222,8 @@ footer {
 }
 
 .address {
-  line-height: 1.95;
   font-size: 20px;
+  line-height: 1.95;
 }
 
 .copy {
@@ -238,12 +239,18 @@ footer {
   width: 125px;
 }
 
-.sp__nav, .hamburger {
+.sp__nav, .hamburger, .intro__exp2, .sp__about {
   display: none;
 }
 
 @media screen and (max-width: 1100px) {
+  .intro__catch {
+    font-size: 72px;
+  }
 
+  .about__catch {
+    font-size: 36px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -330,5 +337,226 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+  /* main */
 
+  /* intro */
+  .intro {
+    margin: 40px 0;
+  }
+
+  .intro__etrans {
+    font-size: 17px;
+  }
+
+  .intro__catch {
+    font-size: 38px;
+    line-height: 1.17;
+    margin-bottom: 40px;
+    letter-spacing: 0.02em;
+  }
+
+  .intro__exp {
+    display: none;
+  }
+
+  .intro__exp2 {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.1em;
+  }
+
+  /* section */
+  #about, #menu, #event, .address__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .sec__title {
+    height: 45px;
+  }
+
+  /* ABOUT US */
+  #about {
+    margin: 18px 0;
+  }
+
+  #sp__sec__about__title {
+  margin-bottom: 15px;
+  }
+
+  .about__inner {
+    display: block;
+    align-items: center;
+  }
+
+  .about__img {
+    width: 100%;
+  }
+
+  .aboutimg {
+    border-radius: 0;
+  }
+
+  .about__items {
+    padding: 0;
+    width: 100%;
+  }
+
+  .about__catch {
+    font-size: 36px;
+    line-height: 1.25;
+    margin: 34px 0 26px;
+    padding: 0 20px;
+  }
+
+  .about__exp {
+    font-size: 16px;
+    line-height: 1.75;
+    padding: 0 20px;
+    text-align: justify;  /* 両端揃え(均等割付け) */
+  }
+
+
+  /* MENU */
+  #sec__menu__title {
+    margin: 34px 0 20px;
+  }
+
+  .menu__container {
+    display: block;
+  }
+  
+  .menu__items {
+    max-width: 100%;
+    margin: 0 38px;
+  }
+
+  .menu__items img {
+    width: 100%;
+  }
+
+  .menu__items h3 {
+    color: #d30202;
+    font-size: 40px;
+    margin: -10px 0 20px 10px;
+  }
+
+  .menu__items p {
+    font-size: 17px;
+    line-height: 1.59;
+    margin-bottom: 60px;
+  }
+
+
+  /* GALLERY */
+  #sec__gallery__title {
+    margin: 32px 0 18px;
+  }
+
+  .gallary_inner {
+    display: block;
+  }
+  
+  .gallary_inner img {
+    max-width: 100%;
+    display: none;
+  }
+
+  .gallary_inner img:last-child {
+    display: block;
+  }
+
+
+  /* EVENT */
+  #sec__event__title {
+    margin: 32px 0 18px;
+  }
+
+  .event__container {
+    border: #4f260b solid 3px;
+    background-color: #ffffff;
+    font-size: 16px;
+    padding: 20px 10px;
+    margin: 0 20px;
+  }
+
+  .event__items {
+    display: block;
+    /* margin-bottom: 0; */
+    max-width: 700px;
+    margin: 0 auto 26px 16px;
+  }
+
+  .event__items:last-child {
+    margin-bottom: 0;
+  }
+
+  .event__items time {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .event__time {
+    margin-bottom: 20px;
+  }
+
+  .event__items p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+
+  /* ACCESS */
+  #sec__access__title {
+    margin: 30px 0 8px;
+  }
+
+  .map {
+    width: 100%;
+    height: 190px;
+  }
+
+
+/* footer */
+  footer {
+    background-color: #ffffff;
+    padding: 46px 20px 32px;
+  }
+
+  .address__container {
+    display: block;
+  }
+
+  .address__container img {
+    height: 52px;
+    margin-right: 0px;
+    margin-bottom: 32px;
+  }
+
+  .address {
+    font-size: 18px;
+    line-height: 1.72;
+  }
+  
+  .copy {
+    text-align: center;
+    margin-top: 46px;
+    font-size: 16px;
+  }
+
+  .toTop {
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+    width: 100px;
+  }
+
+
+
+
+  .pc__about {
+    display: none;
+  }
 }
