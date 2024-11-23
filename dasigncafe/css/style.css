@@ -337,6 +337,11 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+  /* mainvisual */
+  .mainvisual img {
+    width: 100%;
+  }
+
   /* main */
 
   /* intro */
@@ -396,6 +401,7 @@ footer {
 
   .aboutimg {
     border-radius: 0;
+    width: 100%;
   }
 
   .about__items {
@@ -417,7 +423,6 @@ footer {
     text-align: justify;  /* 両端揃え(均等割付け) */
   }
 
-
   /* MENU */
   #sec__menu__title {
     margin: 34px 0 20px;
@@ -426,7 +431,7 @@ footer {
   .menu__container {
     display: block;
   }
-  
+
   .menu__items {
     max-width: 100%;
     margin: 0 38px;
@@ -448,7 +453,6 @@ footer {
     margin-bottom: 60px;
   }
 
-
   /* GALLERY */
   #sec__gallery__title {
     margin: 32px 0 18px;
@@ -457,7 +461,7 @@ footer {
   .gallary_inner {
     display: block;
   }
-  
+
   .gallary_inner img {
     max-width: 100%;
     display: none;
@@ -466,7 +470,6 @@ footer {
   .gallary_inner img:last-child {
     display: block;
   }
-
 
   /* EVENT */
   #sec__event__title {
@@ -507,7 +510,6 @@ footer {
     white-space: nowrap;
   }
 
-
   /* ACCESS */
   #sec__access__title {
     margin: 30px 0 8px;
@@ -518,8 +520,7 @@ footer {
     height: 190px;
   }
 
-
-/* footer */
+  /* footer */
   footer {
     background-color: #ffffff;
     padding: 46px 20px 32px;
