@@ -224,6 +224,7 @@ footer {
 .address {
   font-size: 20px;
   line-height: 1.95;
+  font-style: normal;
 }
 
 .copy {
@@ -384,6 +385,10 @@ footer {
   /* ABOUT US */
   #about {
     margin: 18px 0;
+  }
+
+  .sp__about {
+    display: block;
   }
 
   #sp__sec__about__title {
