@@ -14,6 +14,7 @@ body {
   padding-top: 15px;
   position: absolute;
   width: 100%;
+  z-index: 9997;
 }
 
 .header__nav ul {
@@ -242,6 +243,20 @@ footer {
 
 .sp__nav, .hamburger, .intro__exp2, .sp__about {
   display: none;
+}
+
+/* スライダー */
+.slick-dots {
+  bottom: 5px;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+  color: #ffffff;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 1100px) {

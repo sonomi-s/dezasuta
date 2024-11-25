@@ -1,0 +1,34 @@
+// 入れ子でかける
+$pink: #b97bdc;
+$main_color: #f0dab1;
+h1 {
+  color: red;
+  background-color: $pink;
+  span {
+    color: blue;
+    background-color: $main_color;
+  }
+  // メディアクエリも入れ子でかける
+  @media screen and (max-width: 767px) {
+    color: #377878;
+    span {
+      color: red;
+    }
+  }
+}
+
+// 擬似要素も入れ子でかける
+a {
+  display: block;
+  width: 200px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  background-color: $pink;
+  border-radius: 55px;
+  &:hover {
+    background-color: $main_color;
+  }
+}
+
+@import "./parts.scss";

@@ -6,9 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>デザインカフェ</title>
   <link rel="stylesheet" href="./CSS/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
   <link rel="stylesheet" href="./CSS/style.css">
   <!-- jQuery読み込み -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -67,6 +70,10 @@
       <picture>
         <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width: 767px)">
         <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子">
+      </picture>
+      <picture>
+        <source srcset="./images/sp_main_vs_2@2x-100.jpg" media="(max-width: 767px)">
+        <img src="./images/slider_2.jpg" alt="カフェ店内の様子">
       </picture>
     </div>
     <!-- <div class="mainvisual">
@@ -148,6 +155,7 @@
         <img src="./images/pc_gallary_03-100.jpg" alt="gallary_03">
         <img src="./images/pc_gallary_04-100.jpg" alt="gallary_04">
         <img src="./images/pc_gallary_05-100.jpg" alt="gallary_05">
+        <img src="./images/pc_gallary_03-100.jpg" alt="gallary_03_2">
       </div>
     </section>
 
@@ -204,9 +212,31 @@
 
   <script>
     $(function () {
+      // ハンバーガーメニュー
       $('.hamburger').click(function () {
         $('.sp__nav').fadeToggle();   //フェードイン・フェードアウト
         $('.hamburger').toggleClass('open');  //class名追加
+      });
+
+      // スライダー
+      $(".mainvisual").slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true
+      });
+      $(".gallary_inner").slick({
+        arrows: false,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1
+          }
+        }]
       });
     });
   </script>

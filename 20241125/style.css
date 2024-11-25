@@ -1,0 +1,33 @@
+h1 {
+  color: red;
+  background-color: #b97bdc;
+}
+h1 span {
+  color: blue;
+  background-color: #f0dab1;
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    color: #377878;
+  }
+  h1 span {
+    color: red;
+  }
+}
+
+a {
+  display: block;
+  width: 200px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  background-color: #b97bdc;
+  border-radius: 55px;
+}
+a:hover {
+  background-color: #f0dab1;
+}
+
+h1 {
+  font-size: 64px;
+}/*# sourceMappingURL=style.css.map */
